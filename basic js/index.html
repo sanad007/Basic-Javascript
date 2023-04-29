@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: rgb(18,111,225,0.418);
+      }
+      input,
+      button {
+        width: 300px;
+        margin: 4px;
+        border: none;
+        height: 42px;
+        padding: 0px;
+        font-size: 22px;
+        text-align: center;
+        border-radius: 4px;
+      }
+      button{
+        background-color: rgb(255, 189, 76);
+        color: rgb(24, 23, 23);
+      }
+      button:hover{
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="unit" placeholder="Enter Name" />
+    <button onclick="userinput()">Greet</button>
+    <script>
+        function userinput(){
+            let name = document.getElementById("unit").value;
+            alert("Hello"+" "+name);
+            unit.value=" ";
+        }
+    </script>
+  </body>
+</html>
